@@ -5,15 +5,13 @@ import CartIcon from "./CartIcon";
 
 const CartButton = (props) => {
   return (
-    <Fragment>
-      <div className={classes.button}>
-        <span className={classes.icon}>
-          <CartIcon />
-        </span>
-        <span>Your Cart</span>
-        <span className={classes.badge}>3</span>
-      </div>
-    </Fragment>
+    <button className={classes.button} onClick={props.onClick}>
+      <span className={classes.icon}>
+        <CartIcon />
+      </span>
+      <span>Your Cart</span>
+      <span className={classes.badge}>3</span>
+    </button>
   );
 };
 
