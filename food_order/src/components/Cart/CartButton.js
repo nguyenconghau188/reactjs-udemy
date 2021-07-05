@@ -8,7 +8,7 @@ const CartButton = (props) => {
   const cartCtx = useContext(CartContext);
 
   const totalItemsInCart = cartCtx.items.reduce((total, item) => {
-    return total + item.totalAmount;
+    return total + item.amount;
   }, 0);
 
   return (
